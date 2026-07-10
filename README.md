@@ -2,11 +2,13 @@
 
 #### A modernized fork of Paul Jerimy's Security Certification Roadmap. This version updates it for 2026, adds interactivity, and lets you build your own roadmap from it.
 
+View at https://datahackshaw.com/cybersec-roadmap/
+
 ## Screenshots
 ![Roadmap](./assets/png1.png)
 ![My Roadmap](./assets/png2.png)
 
-## What's different from the original
+## What's different
 
 1. Certs updated, added, and removed (a lot changes in two years)
 2. Search and domain filter controls

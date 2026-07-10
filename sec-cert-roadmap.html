@@ -29,6 +29,7 @@
         --ui-glow:   rgba(74,158,255,0.15);
         --mono: 'IBM Plex Mono', monospace;
         --sans: 'IBM Plex Sans', sans-serif;
+        --cons: consolas;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: white; color: var(--ui-text); font-family: var(--sans); font-weight: 300; min-height: 100vh; }
@@ -55,7 +56,7 @@
     }
     #cert-search:focus { border-color: var(--ui-accent); box-shadow: 0 0 0 3px var(--ui-glow); }
     #cert-search::placeholder { color: var(--ui-muted); }
-    /* replace the default gradient WebKit clear "X" with a flat accent-blue one */
+    /* replace the default gradient WebKit clear "X" with blue one */
     #cert-search::-webkit-search-cancel-button {
         -webkit-appearance: none; appearance: none;
         height: 13px; width: 13px; margin-left: 6px; cursor: pointer;
@@ -99,7 +100,7 @@
     .chart-header {
         display: flex; align-items: baseline; gap: 18px;
         padding: 8px 8px 6px; background: white; border-radius: 6px 6px 0 0;
-        font-family: var(--sans);
+        font-family: var(--mono);
     }
     .chart-main-title { font-size: 1.5rem; font-weight: 500; color: #1a1a1a; padding-bottom: 30px; }
 
@@ -107,7 +108,7 @@
     .certchart {
         background: white; color: #323232; font-weight: 300;
         display: inline-flex; align-items: center; justify-content: center;
-        text-align: center; font-family: var(--sans);
+        text-align: center; font-family: var(--cons);
         float: left; flex-direction: column;
     }
     .certbg {
@@ -303,7 +304,7 @@
     #static-fallback { display:none; }
     @media (max-width:720px) {
         #chart-outer { display:none; }
-        #my-roadmap-section { display:none; }   /* builder is pointer-only; hide on touch */
+        #my-roadmap-section { display:none; }
         #static-fallback { display:block; padding:20px 16px; }
         #static-fallback > p { color:var(--ui-muted); font-size:.9rem; margin-bottom:12px; text-align:center; }
     }
@@ -385,9 +386,7 @@
         z-index: 1;
         }
 
-        /* ============================================================
-        MY ROADMAP — node cards
-        ============================================================ */
+        /* MY ROADMAP — node cards */
         .my-cert-node {
         position: absolute;
         z-index: 2;
@@ -450,7 +449,7 @@
         .cert-box[draggable="true"] { cursor: grab; }
         .cert-box[draggable="true"]:active { cursor: grabbing; }
 
-        /* PROVIDER NOTES — flat, discrete list (no boxed cards) */
+        /* PROVIDER NOTES */
         .notes-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -488,9 +487,7 @@
         }
         .note-card a:hover { color: var(--ui-accent); text-decoration: underline; }
 
-    /* ============================================================
-       PROGRESS TRACKING (earned / in-progress / planned)
-    ============================================================ */
+    /* PROGRESS TRACKING (earned / in-progress / planned) */
     .filter-btn#progress-btn { color: var(--ui-accent); }
     .filter-btn#progress-btn.active { border-color: var(--ui-accent); background: var(--ui-glow); }
 
@@ -508,7 +505,7 @@
     .cert-box.status-planned::after    { content: "\2605"; color: #f3e3ff; }
     body.tracking-on .cert-box:not(.search-dim):not(.domain-dim) { cursor: copy; }
 
-    /* progress panel */
+    /* PROGRESS PANEL */
     #progress-panel { display: none; background: var(--ui-surface); border-bottom: 1px solid var(--ui-border);
         padding: 14px 20px; }
     #progress-panel.open { display: block; }
@@ -526,9 +523,7 @@
     .pbar-fill-inprogress { background: #f1b50a; height: 100%; transition: width .25s; opacity: .85; }
     .pbar-row .pbar-count { color: var(--ui-muted); white-space: nowrap; }
 
-    /* ============================================================
-       MOBILE CERT LIST (replaces hot-linked static image)
-    ============================================================ */
+    /* MOBILE CERT LIST */
     #mobile-cert-list { text-align: left; max-width: 640px; margin: 8px auto 0; }
     #mobile-search-empty { display:none; color: var(--ui-muted); font-size:.85rem; padding:14px 4px; }
     .m-domain { border: 1px solid var(--ui-border); border-radius: 8px; margin-bottom: 10px; overflow: hidden; background: #fff; }
@@ -566,18 +561,14 @@
                 display: none !important;
         }
 
-        /* Let the whole chart show: no sticky, no scroll clipping, no float */
+        /* Let the whole chart show: no sticky, no scroll clipping, no float, print full chart even with filter active */
         #chart-outer { overflow: visible !important; padding: 0 !important; }
         .certchart   { float: none !important; }
         .chart-inner { break-inside: avoid; }
         .chart-header { padding: 0 0 4px !important; }
         .chart-main-title { color: #000 !important; padding-bottom: 30px !important; }
-
-        /* Always print the full chart even if a filter/search was active */
         .cert-box.search-dim, .cert-box.domain-dim { opacity: 1 !important; }
         .cert-box.search-match { outline: none !important; filter: none !important; }
-
-        /* No hover tooltips on paper */
         [tooltiptext]:before, [tooltipleft]:before, [tooltipright]:before,
         [tooltiptexttitle]:before, [tooltiptexttitleleft]:before { display: none !important; }
 
@@ -591,7 +582,7 @@
 </head>
 <body>
 
-<!-- STICKY TOP (control bar + progress panel pin together) -->
+<!-- STICKY TOP (control bar + progress panel) -->
 <div id="sticky-top">
 <!-- CONTROL BAR -->
 <div id="control-bar" role="search" aria-label="Certification chart controls">
@@ -694,7 +685,7 @@
 
     <!-- FOREGROUND CERT GRID (explicit grid-column/row placement - no spacers) -->
     <div class="certcontainer" id="cert-grid">
-        <div class="prog-lang-line" style="grid-column:1/-1;grid-row:21" aria-hidden="true"></div>
+        <div class="prog-lang-line" style="grid-column:2/-1;grid-row:21" aria-hidden="true"></div>
         <a class="cert-box redopsitem1" data-domain="ops" style="grid-column:47/span 1;grid-row:2" href="https://www.offensive-security.com/awe-osee/" tooltipright="Offensive Security Exploitation Expert
 Live training course + Labs
 Varied pricing, likely $5,000+" rel="noopener noreferrer" tabindex="0" target="_blank">OSEE</a>
@@ -1727,25 +1718,22 @@ Free exam" rel="noopener noreferrer" tabindex="0" target="_blank">MICS</a>
         </div>
 
         <div class="note-card">
-            <h3>ITIL</h3>
-            <p>Certifications must be completed in a specific order.</p>
-            <a href="https://www.itil.com/certifications" rel="noopener noreferrer" target="_blank">itil.com/certifications</a>
-        </div>
-
-        <div class="note-card">
             <h3>ISACA</h3>
             <p>Exam prices drop with membership, which carries an annual fee - this can be worthwhile especially for students and recent graduates. ISACA certifications require provable years of work experience; education can fulfill some but not all of this requirement.</p>
+                <a href="https://www.isaca.org/credentialing" rel="noopener noreferrer" target="_blank">isaca.org/credentialing</a>
         </div>
 
         <div class="note-card">
             <h3>EC-Council</h3>
             <p>Several certifications require either provable work experience or completion of official paid training to qualify for the exam. Without work experience, the required training can be very expensive - often over $1,600 for a single course tied to one cert.</p>
             <p>EC-Council also practices dynamic pricing based on visitor data, meaning different people may see different prices for the same product. Checking the site in an incognito browser, on a mobile device, or from a different IP address may show a better price.</p>
+            <a href="https://www.eccouncil.org/train-certify/" rel="noopener noreferrer" target="_blank">eccouncil.org/train-certify</a>
         </div>
 
         <div class="note-card">
             <h3>GIAC</h3>
             <p>Certifications are well valued but expensive. Most exams alone cost around $1,000, and the associated training can range from a few thousand to ten thousand dollars. Self-funding this training is generally not recommended — most people obtain it through an employer or school.</p>
+            <a href="https://www.giac.org/certifications" rel="noopener noreferrer" target="_blank">giac.org/certifications</a>
         </div>
     </div>
 </section>
