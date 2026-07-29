@@ -2,6 +2,29 @@
 
 Notable changes to this project will be documented in this file.
 
+
+## [2.0.3] - 2026-07-29
+
+### Added
+
+- tests/ folder with first test for checking link validity
+
+### Fixed
+
+- Links for: KLCP, TUV CyAware, ISFCE CCE, BLT1 and BLT2, Asis CPP
+
+### Changed
+
+- CyberDefender CCD -> CCDL2
+- Salesforce CIAMD -> CPIAMA
+
+### Removed
+
+- CSIAC CSFA, Apple ACSP, Exida CACS and CACE, CSA CGC, CIISec ICSF, Mile2 C)ISCAP
+
+---
+---
+
 ## [2.0.2] - 2026-07-10
 
 ### Added
