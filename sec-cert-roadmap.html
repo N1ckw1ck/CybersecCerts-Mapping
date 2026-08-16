@@ -113,8 +113,8 @@
     }
     .certbg {
         background: #fff; justify-content: left; display: grid; position: relative;
-        grid-template-columns: [silllevel] 0.8vmax [network] 7.5vmax [iam] 2.65vmax [engineer] 17.2vmax [asset] 5.1vmax [mgmt] 21.8vmax [testing] 7.5vmax [software] 2.7vmax [operations] 31.5vmax;
-        grid-template-rows: [domain] 2vmax [chart] 43.7vmax;
+        grid-template-columns: [skilllevel] 0.8vmax [network] 7.5vmax [iam] 2.65vmax [engineer] 17.2vmax [asset] 5.1vmax [mgmt] 21.8vmax [testing] 7.5vmax [software] 2.7vmax [operations] 31.5vmax;
+        grid-template-rows: [domain] 2vmax [chart] 45.2vmax;
         column-gap: 0.2vmax; white-space: pre-wrap; line-height: 130%; left: 0;
     }
     .domaintitle {
@@ -142,17 +142,17 @@
         grid-template-columns: 2.2vmax 2.2vmax 2.2vmax 2.3vmax 2.2vmax 2.3vmax 2.2vmax 2.2vmax 2.2vmax 2.2vmax 2.2vmax 2.2vmax 2.1vmax;
         grid-template-rows: 1vmax auto; column-gap: .2vmax;
     }
-    .subtitle1 { font-weight:400;font-size:.5vmax;text-align:center;align-content:bottom;justify-content:center;align-self:flex-end;display:flex; }
-    .subtitle2 { font-weight:400;font-size:.5vmax;text-align:center;align-content:bottom;justify-content:center;align-self:flex-end;display:flex;grid-column:span 2; }
-    .subtitle4 { font-weight:400;font-size:.5vmax;text-align:center;align-content:bottom;justify-content:center;align-self:flex-end;display:flex;grid-column:span 4; }
-    .subtitle5 { font-weight:400;font-size:.5vmax;text-align:center;align-content:bottom;justify-content:center;align-self:flex-end;display:flex;grid-column:span 5; }
+    .subtitle1 { font-weight:400;font-size:.5vmax;text-align:center;justify-content:center;align-self:center;display:flex; }
+    .subtitle2 { font-weight:400;font-size:.5vmax;text-align:center;justify-content:center;align-self:center;display:flex;grid-column:span 2; }
+    .subtitle4 { font-weight:400;font-size:.5vmax;text-align:center;justify-content:center;align-self:center;display:flex;grid-column:span 4; }
+    .subtitle5 { font-weight:400;font-size:.5vmax;text-align:center;justify-content:center;align-self:center;display:flex;grid-column:span 5; }
     .spacer    { background:none; }
-    .engsubdomain1  { display:flex;background:var(--orangelt);column-gap:1vmax; }
-    .engsubdomain4  { display:flex;background:var(--orangelt);grid-column:span 4;column-gap:1vmax;margin-left:.3vmax; }
-    .mgmtsubdomain4 { display:flex;background:var(--blacklt);grid-column:span 4;column-gap:1vmax;margin-left:.3vmax; }
-    .bluesubdomain2 { display:flex;background:var(--bluelt);grid-column:span 2;margin-left:.1vmax; }
-    .redsubdomain2  { display:flex;background:var(--redlt);grid-column:span 2;column-gap:1vmax; }
-    .redsubdomain5  { display:flex;background:var(--redlt);grid-column:span 5;column-gap:1vmax; }
+    .engsubdomain1  { display:flex;background:var(--orangelt);column-gap:1vmax;margin-bottom:1.5vmax }
+    .engsubdomain4  { display:flex;background:var(--orangelt);grid-column:span 4;column-gap:1vmax;margin-left:.3vmax;margin-bottom:1.5vmax }
+    .mgmtsubdomain4 { display:flex;background:var(--blacklt);grid-column:span 4;column-gap:1vmax;margin-left:.3vmax;margin-bottom:1.5vmax }
+    .bluesubdomain2 { display:flex;background:var(--bluelt);grid-column:span 2;margin-left:.1vmax;margin-bottom:1.5vmax }
+    .redsubdomain2  { display:flex;background:var(--redlt);grid-column:span 2;column-gap:1vmax;margin-bottom:1.5vmax }
+    .redsubdomain5  { display:flex;background:var(--redlt);grid-column:span 5;column-gap:1vmax;margin-bottom:1.5vmax }
 
     /* FOREGROUND CERT GRID */
     .certcontainer {
@@ -176,7 +176,7 @@
             [software]   2.35vmax
                          0.5vmax
             [ops]        2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax 2.4vmax;
-        grid-template-rows: repeat(27, 1.5vmax);
+        grid-template-rows: repeat(30, 1.5vmax);
         white-space: pre-wrap;
     }
     .skilllevelitem {
@@ -1136,10 +1136,14 @@ Score over 90% for LPT Master certification" rel="noopener noreferrer" tabindex=
 $699" rel="noopener noreferrer" tabindex="0" target="_blank">MRE</a>
         <a class="cert-box engineeritem1" data-domain="engineer" style="grid-column:10/span 2;grid-row:17" href="https://www.broadcom.com/support/education/vmware/certification/vcp-vvf-administrator" tooltiptext="VMware Certified Professional - VMware vSphere Foundation Administrator (VCP-VVF Admin)
 $250 exam" rel="noopener noreferrer" tabindex="0" target="_blank">VCP-VVF Adm</a>
+        <a class="cert-box engineeritem1" data-domain="engineer" style="grid-column:14/span 1;grid-row:17" href="https://mile2.com/cwse-course-outline/" tooltiptext="Mile2 Certified Wireless Security Engineer
+~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)WSE</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:20/span 1;grid-row:17" href="https://www.scrum.org/assessments/professional-agile-leadership-evidence-based-management-certification" tooltiptext="Scrum Professional Agile Leadership™ - Evidence-Based Management™ (PAL-EBM)
 $200 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PAL-EBM</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:21/span 1;grid-row:17" href="https://www.scrum.org/assessments/professional-agile-leadership-certification" tooltiptext="Scrum Professional Agile Leadership™ (PAL I)
 $200 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PAL I</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:17" href="https://mile2.com/crmfa-course-outline/" tooltiptext="Mile2 Certified Risk Management Framework Analyst
+~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)RMFA</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:29/span 1;grid-row:17" href="https://apmg-international.com/product/isoiec-27001" tooltiptext="APMG ISO/IEC 27001 Auditor
 $400 exam" rel="noopener noreferrer" tabindex="0" target="_blank">APMG 27001A</a>
         <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:39/span 1;grid-row:17" href="https://mad20.com/threat-hunting-and-detection-engineering" tooltiptext="MITRE ATT&CK DEFENDER™ (MAD) Threat Hunting and Detection Engineering (THDE)
@@ -1167,6 +1171,8 @@ Free enhancement to Zach EAA" rel="noopener noreferrer" tabindex="0" target="_bl
 $308 exam" rel="noopener noreferrer" tabindex="0" target="_blank">APMG 20000P</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:24/span 1;grid-row:18" href="https://apmg-international.com/product/isoiec-27001" tooltiptext="APMG ISO/IEC 27001 Practitioner
 $400 exam" rel="noopener noreferrer" tabindex="0" target="_blank">APMG 27001P</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:18" href="https://mile2.com/ccsfo-course-outline/" tooltiptext="Mile2 Certified Cybersecurity Framework Officer
+~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)CSFO</a>
         <a class="cert-box softwareitem1" data-domain="software" style="grid-column:33/span 1;grid-row:18" href="https://www.giac.org/certifications/machine-learning-engineer-gmle/" tooltiptext="GIAC Machine Learning Engineer
 $999 exam" rel="noopener noreferrer" tabindex="0" target="_blank">GMLE</a>
         <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:35/span 1;grid-row:18" href="https://www.giac.org/certifications/experienced-cyber-security-gxcs/" tooltiptext="GIAC Experienced Cybersecurity Specialist
@@ -1210,8 +1216,8 @@ $395 exam
 requires IMI membership" rel="noopener noreferrer" tabindex="0" target="_blank">CDP</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:21/span 1;grid-row:19" href="https://ecfirst.biz/index.php?route=product/product&amp;path=59_83&amp;product_id=281" tooltiptext="EC First Certified CCMC Professional
 $2,995 exam" rel="noopener noreferrer" tabindex="0" target="_blank">CCP</a>
-        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:22/span 1;grid-row:19" href="https://www.mile2.com/cisso_outline/" tooltiptext="Mile2 Certified Information Systems Security Officer
-$550 - $650 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)ISSO</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:22/span 1;grid-row:19" href="https://mile2.com/ccssm-course-outline/" tooltiptext="Mile2 Certified Cybersecurity Systems Manager
+$550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)CSSM</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:23/span 1;grid-row:19" href="https://www.itgovernance.co.uk/shop/product/iso-27005-certified-isms-risk-management" tooltiptext="IBITGQ Certified ISO 27005 ISMS Risk Management
 ~$2,783" rel="noopener noreferrer" tabindex="0" target="_blank">CIS RM</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:24/span 1;grid-row:19" href="https://www.exin.com/certifications/information-security-management-professional-based-isoiec-27001-exam" tooltiptext="EXIN ISO/IEC 27001 Professional
@@ -1267,14 +1273,16 @@ $544 exam" rel="noopener noreferrer" tabindex="0" target="_blank">CloudNetX</a>
 $695 exam" rel="noopener noreferrer" tabindex="0" target="_blank">CCSA</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:21/span 1;grid-row:20" href="https://www.scrum.org/assessments/professional-scrum-user-experience-certification" tooltipleft="Professional Scrum with User Experience™ (PSU I)
 $200 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PSU I</a>
-        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:22/span 1;grid-row:20" href="https://mile2.com/cissm_outline/" tooltiptext="Mile2 Certified Information Systems Security Manager
-$550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)ISSM</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:22/span 1;grid-row:20" href="https://www.mile2.com/cisso_outline/" tooltiptext="Mile2 Certified Information Systems Security Officer
+$550 - $650 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)ISSO</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:23/span 1;grid-row:20" href="https://www.certipedia.com/quality_marks/0000063483?locale=en" tooltiptext="TUV IT Security Manager (German)
 $415 exam" rel="noopener noreferrer" tabindex="0" target="_blank">TUV ITSM</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:24/span 1;grid-row:20" href="https://www.itgovernance.co.uk/shop/product/managing-cyber-security-risk-training-course" tooltiptext="IBITGQ Certified in Managing Cyber Security Risk
 ~$2,629" rel="noopener noreferrer" tabindex="0" target="_blank">CCRMP</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:20" href="https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27005/iso-iec-27005-risk-manager" tooltiptext="PECB ISO/IEC 27005 Risk Manager
 ~$995 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PECB 27005RM</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:26/span 1;grid-row:20" href="https://www.mile2.com/cslo_outline/" tooltiptext="Mile2 Certified Security Leadership Officer
+$550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SLO</a>
         <a class="cert-box testitem2" data-domain="testing" style="grid-column:27/span 3;grid-row:20" href="https://drii.org/certification/cbcla" tooltiptext="DRI Certified Business Continuity Lead Auditor
 $400 exam" rel="noopener noreferrer" tabindex="0" target="_blank">DCBCLA</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:30/span 1;grid-row:20" href="https://www.certipedia.com/quality_marks/0000046324?locale=en" tooltiptext="TUV Rheinland Mobile Security Analyst (German)
@@ -1399,8 +1407,8 @@ $695 exam" rel="noopener noreferrer" tabindex="0" target="_blank">CSCS</a>
 $400 exam" rel="noopener noreferrer" tabindex="0" target="_blank">APMG 27001F</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:23" href="https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-foundation" tooltiptext="PECB ISO/IEC 27001 Foundation
 ~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PECB 27001F</a>
-        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:26/span 1;grid-row:23" href="https://www.mile2.com/cslo_outline/" tooltiptext="Mile2 Certified Security Leadership Officer
-$550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SLO</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:26/span 1;grid-row:23" href="https://mile2.com/caicso-course-outline/" tooltiptext="Mile2 Certified AI Cybersecurity Officer
+~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)AICSO</a>
         <a class="cert-box testitem2" data-domain="testing" style="grid-column:27/span 3;grid-row:23" href="https://drii.org/certification/cbca" tooltiptext="DRI Certified Business Continuity Auditor
 $400 exam" rel="noopener noreferrer" tabindex="0" target="_blank">DCBCA</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:30/span 1;grid-row:23" href="https://www.oceg.org/certifications/grc-audit-certification/" tooltiptext="OCEG GRC Auditor
@@ -1572,6 +1580,8 @@ $360 exam" rel="noopener noreferrer" tabindex="0" target="_blank">TOGAF Fdn</a>
 ~$2,599" rel="noopener noreferrer" tabindex="0" target="_blank">CSAP</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:27" href="https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27032/iso-iec-27032-foundation" tooltiptext="PECB ISO/IEC 27032 Foundation
 ~$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">PECB 27032F</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:26/span 1;grid-row:27" href="https://mile2.com/col-course-outline/" tooltiptext="Mile2 Certified Organizational Leader
+~$150-$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)OL</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:29/span 1;grid-row:27" href="https://www.exin.com/certifications/exin-cyber-and-it-security" tooltiptext="EXIN Cyber &amp; IT Security
 $225 exam" rel="noopener noreferrer" tabindex="0" target="_blank">EXIN CIT</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:30/span 1;grid-row:27" href="https://www.tuv.com/landingpage/en/training-functional-safety-cyber-security/detail-pages/zertifikate/cs-specialist.html" tooltiptext="TUV Rheinland Cybersecurity Specialist (German)
@@ -1621,7 +1631,7 @@ $499 exam" rel="noopener noreferrer" tabindex="0" target="_blank">GISF</a>
         <a class="cert-box testitem1" data-domain="testing" style="grid-column:31/span 1;grid-row:28" href="https://www.is-its.org/seminare/cybersecurity-awareness-beauftragter-tuv/" tooltiptext="TUV Rheinland Cybersecurity Awareness (German)
 $415 exam" rel="noopener noreferrer" tabindex="0" target="_blank">TUV CyAware</a>
         <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:35/span 1;grid-row:28" href="https://www.mile2.com/csp_outline/" tooltiptext="Mile2 Certified Security Principles
-$550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SP</a>
+$500-$1750 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SP</a>
         <a class="cert-box redopsitem1" data-domain="ops" style="grid-column:42/span 1;grid-row:28" href="https://www.mile2.com/vulnerability-assessor-outline/" tooltiptext="Mile2 Certified Vulnerability Assessor
 $550 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)VA</a>
         <a class="cert-box redopsitem1" data-domain="ops" style="grid-column:43/span 1;grid-row:28" href="https://www.offsec.com/courses/pen-103/" tooltiptext="Kali Linux Certified Professional
@@ -1633,8 +1643,6 @@ $99 exam" rel="noopener noreferrer" tabindex="0" target="_blank">Cloud Essnt</a>
         <a class="cert-box mgmtitem2" data-domain="mgmt" style="grid-column:17/span 3;grid-row:29" href="https://www.itil.com/professionals/certifications/ITIL-Foundation-Version-5" tooltiptext="ITIL 5 Foundation
 $690 exam
 ~$800 - $1,300 with optional study guides" rel="noopener noreferrer" tabindex="0" target="_blank">ITIL Fdn</a>
-        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:20/span 1;grid-row:29" href="https://tryhackme.com/certification/pre-security" tooltiptext="TryHackMe Pre-Security (SEC0)
-~$60 exam" rel="noopener noreferrer" tabindex="0" target="_blank">SEC0</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:24/span 1;grid-row:29" href="https://www.exin.com/certifications/information-security-foundation-based-iso-iec-27001-exam" tooltiptext="EXIN ISO/IEC 27001 Foundation
 $232 exam" rel="noopener noreferrer" tabindex="0" target="_blank">EXIN 27001F</a>
         <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:29" href="https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27005/iso-iec-27005-foundation" tooltiptext="PECB ISO/IEC 27005 Foundation
@@ -1645,11 +1653,24 @@ $399 exam" rel="noopener noreferrer" tabindex="0" target="_blank">Project+</a>
 $460 exam" rel="noopener noreferrer" tabindex="0" target="_blank">S-SPF</a>
         <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:35/span 1;grid-row:29" href="https://www.eccouncil.org/certification/certified-secure-computer-user" tooltiptext="EC-Council Certified Secure Computer User
 $149 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C|SCU</a>
-        <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:36/span 1;grid-row:29" href="https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html" tooltiptext="Mosse Institute Introduction to Cyber Security
+        <a class="cert-box networkitem1" data-domain="network" style="grid-column:4/span 1;grid-row:30" href="https://mile2.com/cnp-course-outline/" tooltiptext="Mile2 Certified Network Principles
+~$500-$1750 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)NP</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:20/span 1;grid-row:30" href="https://tryhackme.com/certification/pre-security" tooltiptext="TryHackMe Pre-Security (SEC0)
+~$60 exam" rel="noopener noreferrer" tabindex="0" target="_blank">SEC0</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:22/span 1;grid-row:30" href="https://mile2.com/csa1-course-outline/" tooltiptext="Mile2 Certified Security Awareness 1
+~$150-$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SA1</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:23/span 1;grid-row:30" href="https://mile2.com/csa2-course-outline/" tooltiptext="Mile2 Certified Security Awareness 2
+~$150-$500 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)SA2</a>
+        <a class="cert-box mgmtitem1" data-domain="mgmt" style="grid-column:25/span 1;grid-row:30" href="https://mile2.com/citp-course-outline/" tooltiptext="Mile2 Certified Information Technology Principles
+~$500-$1750 exam" rel="noopener noreferrer" tabindex="0" target="_blank">C)ITP</a>
+        <a class="cert-box blueopsitem1" data-domain="ops" style="grid-column:36/span 1;grid-row:30" href="https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html" tooltiptext="Mosse Institute Introduction to Cyber Security
 Free exam" rel="noopener noreferrer" tabindex="0" target="_blank">MICS</a>
+
+
         <div class="skilllevelitem" style="grid-column:1;grid-row:6"><span style="color:var(--reddk)">Expert</span></div>
         <div class="skilllevelitem" style="grid-column:1;grid-row:18"><span style="color:var(--orangedk)">Intermediate</span></div>
         <div class="skilllevelitem" style="grid-column:1;grid-row:25"><span style="color:var(--greendk)">Beginner</span></div>
+        <div class="skilllevelitem" style="grid-column:1;grid-row:30;font-weight:400"><span style="color:var(--blackdk)">FDN</span></div>
 
     </div><!-- end certcontainer -->
     </div><!-- end chart-inner -->

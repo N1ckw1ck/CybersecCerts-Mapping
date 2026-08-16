@@ -3,6 +3,19 @@
 Notable changes to this project will be documented in this file.
 
 
+## [2.0.4] - 2026-08-16
+
+### Added
+
+- Mile2 Certs: C)SA1, C)SA2, C)ITP, C)NP, C)RMFA, C)CSFO, C)AICSO
+
+### Changed
+
+- Mile2 C)ISSM -> C)CSSM
+
+---
+---
+
 ## [2.0.3] - 2026-07-29
 
 ### Added
