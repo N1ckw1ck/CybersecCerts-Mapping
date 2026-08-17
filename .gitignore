@@ -1,2 +1,4 @@
 *.DS_Store
 venv
+
+/assets/png*-DEP*.png

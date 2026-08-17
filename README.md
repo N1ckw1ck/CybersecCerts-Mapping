@@ -10,7 +10,7 @@ View at https://datahackshaw.com/cybersec-roadmap/
 
 ## What's different
 
-1. Certs updated, added, and removed (a lot changes in two years)
+1. Certs updated, added, and removed (a lot changes in two years) - *SEE [CHANGELOG](/CHANGELOG.md)*
 2. Search and domain filter controls
 3. Certification progress tracking and visibility
 4. Hover tooltips with pricing and brief cert descriptions

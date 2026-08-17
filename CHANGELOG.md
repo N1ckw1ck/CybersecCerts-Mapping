@@ -3,6 +3,16 @@
 Notable changes to this project will be documented in this file.
 
 
+## [2.0.5] - 2026-08-17
+
+### Changed
+
+- Updated screenshot in README.md, added link to CHANGELOG.md
+
+---
+---
+
+
 ## [2.0.4] - 2026-08-16
 
 ### Added
